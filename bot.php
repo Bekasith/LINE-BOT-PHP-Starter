@@ -32,8 +32,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text . $a
-//				'text' => $test
+//				'text' => $text . $a
+				'text' => 'สต๊อคคงเหลือ ' . $a
 
 			];
 				
