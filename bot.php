@@ -1,7 +1,7 @@
 <?php
 
 // URL-Xray 
-$ch = curl_init('https://urlxray.expeditedaddons.com/?api_key=' . getenv('URLXRAY_API_KEY') . '&fetch_content=true&url=http%3A%2F%2Fwww.google.com');
+$ch = curl_init('https://urlxray.expeditedaddons.com/?api_key=' . getenv('URLXRAY_API_KEY') . '&fetch_content=true&url=http%3A%2F%2F180.183.251.233:4444/');
 
 $response = curl_exec($ch);
 curl_close($ch);
