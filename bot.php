@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 //				'text' => $text . $a
-				'text' => 'stock is ' . $a
+				'text' =>  $a  // every text return from myHost
 
 			];
 				
