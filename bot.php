@@ -31,8 +31,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-//				'text' => $text . file_get_contents('http://180.183.251.233:4444/search.asp?F7403');
-				'text' => $test
+				'text' => $text . '55'
+//				'text' => $test
 
 			];
 				
