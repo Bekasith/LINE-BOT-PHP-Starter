@@ -29,23 +29,32 @@ if (!is_null($events['events'])) {
 
 			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id="'.$text.'"');
 			list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
-			      
-				switch ($gdtype) {
-				    case '6':
-					$gdtypename = 'ม่านปรับแสง';
-					break;
-				    default:
-					$gdtypename = 'สินค้า';
-				}			
+/*
+	Fabric	72	72 ผ้าโปร่ง	72		
+	Fabric	73	73 ผ้า Italy	73		
+	Fabric	74	74 ผ้า Blackout	74		
+	Fabric	75	75 ผ้าไหม	75		
+	Fabric	76	76 ผ้าโซฟา	76		
+	Fabric	77	77 ผ้า รพ.	77		
+	Fabric	78	78 ผ้าม่าน	78		
+	Fabric	79	79 ผ้าอื่น ๆ 	79		
+*/		
+//	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
+			switch ($gdtype) {
+			    case '6':
+				$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case '72','73','74','75','76','77','78','79':
+				$res = 'ผ้าม่าน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case '5': $gdtypename =
+				$res = 'ม่านม้วน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    default:
+				$res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล"
+			}			
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-//				'text' => $text . $a
-				'text' =>  $gdtypename.' รหัส'.$code.' คงเหลือ'.$bal.' จอง'.$reserve.' เมื่อ '.$update   // every text return from myHost
-
+				'text' =>  $res
 			];
-				
-			
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
