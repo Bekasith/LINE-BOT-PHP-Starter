@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 			    case '5':  
 				$res = 'ม่านม้วน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
 			    default:
-				$res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล"
+				$res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล";
 			}			
 			// Build message to reply back
 			$messages = [
