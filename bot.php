@@ -7,7 +7,7 @@
 	var_dump($response);
 	*/
 // URL-Xray 
-   echo file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($encode));
+  // echo file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($encode));
 // echo $test;
 
 $access_token = 'Ns2HTJkXtLxaV0E52ZI409E6oG/NVwN7ZKXTaHZSs/KS4LenNVh6VpCiz+AwRpTHqlUH9fw+iJRxWULG7LHdeIEmoNT67iR3AswlFGJJO6W7et3YixhBF5gCQDgtG/Idq08FdSHYS9OMOBQwdqOQxQdB04t89/1O/w1cDnyilFU=';
@@ -29,11 +29,11 @@ if (!is_null($events['events'])) {
 
 			//$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
 			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($text));
-			var_dump($text);
-			//list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
+		//	var_dump($text);
+			list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
 	
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
-	/*	switch ($gdtype) {
+		switch ($gdtype) {
 			case "0" :
 			     $res = $code; break;
 			case "5":  
@@ -61,13 +61,13 @@ if (!is_null($events['events'])) {
 			default:
 			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล";
 			}
-	*/
+	 
 			
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				//'text' =>  $res
-				'text' => $text.'#'.$a
+				'text' =>  $res
+				//'text' => $text.'#'.$a
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
