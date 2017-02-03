@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
+			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id="'.$text.'"');
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
