@@ -7,7 +7,7 @@
 	var_dump($response);
 	*/
 // URL-Xray 
-   echo file_get_contents('http://180.183.251.233:4444/search.asp?id="X07-08 BLUE"');
+   echo file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($encode));
 // echo $test;
 
 $access_token = 'Ns2HTJkXtLxaV0E52ZI409E6oG/NVwN7ZKXTaHZSs/KS4LenNVh6VpCiz+AwRpTHqlUH9fw+iJRxWULG7LHdeIEmoNT67iR3AswlFGJJO6W7et3YixhBF5gCQDgtG/Idq08FdSHYS9OMOBQwdqOQxQdB04t89/1O/w1cDnyilFU=';
@@ -27,7 +27,8 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
+			//$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
+			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($text));
 			var_dump($text);
 			//list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
 	
