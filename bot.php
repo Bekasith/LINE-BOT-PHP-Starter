@@ -33,7 +33,7 @@ if (!is_null($events['events'])) {
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
 		switch ($gdtype) {
 			case "0" :
-			     $res = $a; break;
+			     $res = $code; break;
 			case "5":  
 			     $res = 'ม่านม้วน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
 			case "6":
