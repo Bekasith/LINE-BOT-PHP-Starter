@@ -41,12 +41,26 @@ if (!is_null($events['events'])) {
 */		
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
 			switch ($gdtype) {
+			    case "5":  
+			     $res = 'ม่านม้วน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
 			    case "6":
 			     $res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
-			//    case "72","73","74","75","76","77","78","79":
-			//	 $res = 'ผ้าม่าน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
-			    case "5":  
-				$res = 'ม่านม้วน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "72"
+			     $res = 'ผ้าโปร่ง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "73"
+			     $res = 'ผ้า Italy '.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "74"
+			     $res = 'ผ้า Blckout '.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "75"
+			     $res = 'ผ้าไหม'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "76"
+			     $res = 'ผ้าโซฟา'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "77"
+			     $res = 'ผ้า รพ.'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "78"
+			     $res = 'ผ้าม่าน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case"79":
+			     $res = 'ผ้าม่าน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
 			    default:
 				$res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล";
 			}			
