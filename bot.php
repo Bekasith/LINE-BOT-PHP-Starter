@@ -28,11 +28,13 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id="'.$text.'"');
+			list($gdtype , $code, $bal, $reserve, $update) =
+    				split("#", $a, 5);
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
 //				'text' => $text . $a
-				'text' =>  $a   // every text return from myHost
+				'text' =>  $gdtype.' รหัส'.$code.''.$bal.''.$reserve.''.$update   // every text return from myHost
 
 			];
 				
