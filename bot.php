@@ -31,16 +31,9 @@ if (!is_null($events['events'])) {
 			list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
 			      
 				switch ($gdtype) {
-				    case 6:
+				    case '6':
 					$gdtypename = 'ม่านปรับแสง';
 					break;
-				    case label2:
-					code to be executed if n=label2;
-					break;
-				    case label3:
-					code to be executed if n=label3;
-					break;
-				    ...
 				    default:
 					$gdtypename = 'สินค้า';
 				}			
@@ -48,7 +41,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 //				'text' => $text . $a
-				'text' =>  $gdtypename.' รหัส'.$code.''.$bal.''.$reserve.''.$update   // every text return from myHost
+				'text' =>  $gdtypename.' รหัส'.$code.' คงเหลือ'.$bal.' จอง'.$reserve.' เมื่อ '.$update   // every text return from myHost
 
 			];
 				
