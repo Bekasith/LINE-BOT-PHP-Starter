@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 
 			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id="'.$text.'"');
 			var_dump($text);
-			list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
+			//list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
 	
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
 	/*	switch ($gdtype) {
