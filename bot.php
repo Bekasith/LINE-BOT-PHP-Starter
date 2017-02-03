@@ -41,8 +41,8 @@ if (!is_null($events['events'])) {
 */		
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
 			switch ($gdtype) {
-			//    case "6":
-			//     $res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
+			    case "6":
+			     $res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
 			//    case "72","73","74","75","76","77","78","79":
 			//	 $res = 'ผ้าม่าน'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update; break;
 			    case "5":  
