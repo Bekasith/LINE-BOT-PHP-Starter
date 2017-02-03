@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 //				'text' => $text . $a
-				'text' =>  $a  // every text return from myHost
+				'text' =>  $a .'ฟหกด่าสว'  // every text return from myHost
 
 			];
 				
@@ -45,7 +45,7 @@ if (!is_null($events['events'])) {
 				'messages' => [$messages],
 			];
 			$post = json_encode($data);
-			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+			$headers = array('Content-Type: application/json; charset=UTF-8', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
