@@ -28,7 +28,8 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
-			$mid = $event['message']['from'];
+			$mid = 'aa';
+			//$mid = $event['message']['from'];
 
 			// Build message to reply back
 			$messages = [
