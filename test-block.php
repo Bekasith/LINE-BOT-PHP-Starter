@@ -28,7 +28,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
-			$mid = $event['message']['MID'];
+			$mid = $event['message']['from'];
 
 			//$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
 			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($text));
