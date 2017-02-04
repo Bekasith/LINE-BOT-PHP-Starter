@@ -26,7 +26,8 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-
+			$mid = $event['source']['userId'];
+			
 			//$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
 			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($text));
 		//	var_dump($text);
@@ -34,6 +35,8 @@ if (!is_null($events['events'])) {
 	
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
 		switch ($gdtype) {
+			case "-1" :
+			     $res = 'กรุณา ลงทะเบียน ทาง pg@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],ชื่อ,ลค/พนง'; break;
 			case "0" :
 			     $res = $code; break;
 			case "5":  
@@ -67,7 +70,6 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				'text' =>  $res
-				//'text' => $text.'#'.$a
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
