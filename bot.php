@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 			$mid = $event['source']['userId'];
 			
 			//$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
-			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($text));
+			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($text).'&mid='.urlencode($mid));
 		//	var_dump($text);
 			list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
 	
