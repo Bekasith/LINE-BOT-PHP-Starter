@@ -10,6 +10,28 @@
   // echo file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($encode));
 // echo $test;
 
+
+/*  received message structure
+{
+  "events": [
+      {
+        "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+        "type": "message",
+        "timestamp": 1462629479859,
+        "source": {
+             "type": "user",
+             "userId": "U206d25c2ea6bd87c17655609a1c37cb8"
+         },
+         "message": {
+             "id": "325708",
+             "type": "text",
+             "text": "Hello, world"
+          }
+      }
+  ]
+}
+*/
+	
 // for Sally 
 $access_token = 'EqmalVz40PlAWVQCr6tYgYmfSXp9UQIjfYV6mrtJP6hrSOZT+Ro9HoxNpEqYp+JyxDLYm/sERxzOqZuU3FbVLYzQcO20bdh7o+vTdzys4n2pYnm8+IUXisS/Tj8rjYp13arMW2L+tv4mO/Y2cK3aRQdB04t89/1O/w1cDnyilFU=';
 
@@ -29,7 +51,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			
 			$mid = 'aa';
-			//$mid = $event['message']['from'];
+			$mid = $event['source']['userId'];
 
 			// Build message to reply back
 			$messages = [
