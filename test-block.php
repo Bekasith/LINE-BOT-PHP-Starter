@@ -30,11 +30,6 @@ if (!is_null($events['events'])) {
 			
 			$mid = $event['message']['from'];
 
-			//$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.$text);
-			$a = file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($text));
-		//	var_dump($text);
-			list($gdtype , $code, $bal, $reserve, $update) = split("#", $a, 5);
-	
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
