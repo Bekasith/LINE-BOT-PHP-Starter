@@ -36,7 +36,15 @@ if (!is_null($events['events'])) {
 			list($gdtype , $code, $bal, $reserve, $info) = split("#", $a, 5);
 	
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
-		switch ($gdtype) {
+//			case "10":
+//			     $res = 'รางประดับ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+/*			case "50" :
+			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+			case "51" :
+			     $res = 'ชายครุย'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+*/
+			
+			switch ($gdtype) {
 			case "-1" :
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
 			case "0" :
@@ -47,16 +55,10 @@ if (!is_null($events['events'])) {
 			     $res = 'ม่านม้วน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "6":
 			     $res = 'ม่านปรับแสง'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-//			case "10":
-//			     $res = 'รางประดับ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "40" :
 			     $res = 'วอลล์ '.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-/*			case "50" :
-			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "51" :
-			     $res = 'ชายครุย'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-*/			case "72" :
-			     $res = 'ผ้าโปร่ง'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+//			case "72" :
+//			     $res = 'ผ้าโปร่ง'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "73" :
 			     $res = 'ผ้า Italy '.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "74" :
@@ -69,7 +71,7 @@ if (!is_null($events['events'])) {
 			     $res = 'ผ้า รพ.'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "78": 
 			     $res = 'ผ้าม่าน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case"79":
+			case "79":
 			     $res = 'ผ้าม่าน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			default:
 			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล";
