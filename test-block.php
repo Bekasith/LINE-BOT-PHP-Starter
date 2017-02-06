@@ -54,9 +54,9 @@ if (!is_null($events['events'])) {
 			case "50" :
 			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "51" :
-			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "72" :
 			     $res = 'ชายครุย'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+			case "72" :
+			     $res = 'ผ้าโปร่ง'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "73" :
 			     $res = 'ผ้า Italy '.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "74" :
