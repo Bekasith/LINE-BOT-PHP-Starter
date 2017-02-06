@@ -51,10 +51,10 @@ if (!is_null($events['events'])) {
 			     $res = 'รางประดับ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "40" :
 			     $res = 'วอลล์ '.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "50" :
-			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "51" :
-			     $res = 'ชายครุย'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+//			case "50" :
+//			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+//			case "51" :
+//			     $res = 'ชายครุย'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "72" :
 			     $res = 'ผ้าโปร่ง'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "73" :
