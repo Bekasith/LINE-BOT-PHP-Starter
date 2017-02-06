@@ -74,7 +74,7 @@ if (!is_null($events['events'])) {
 			case "79" :
 			     $res = 'ผ้าม่าน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			default:
-			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล";
+			     $res = $gdtype."สินค้านี้ ยังไม่พร้อมให้ ข้อมูล bb ";
 			}
 	 
 			
