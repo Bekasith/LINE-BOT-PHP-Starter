@@ -47,15 +47,15 @@ if (!is_null($events['events'])) {
 			     $res = 'ม่านม้วน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "6":
 			     $res = 'ม่านปรับแสง'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "10":
-			     $res = 'รางประดับ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+//			case "10":
+//			     $res = 'รางประดับ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "40" :
 			     $res = 'วอลล์ '.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-//			case "50" :
-//			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-//			case "51" :
-//			     $res = 'ชายครุย'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "72" :
+/*			case "50" :
+			     $res = 'สายรวบ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+			case "51" :
+			     $res = 'ชายครุย'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+*/			case "72" :
 			     $res = 'ผ้าโปร่ง'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "73" :
 			     $res = 'ผ้า Italy '.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
