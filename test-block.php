@@ -7,7 +7,7 @@
 	var_dump($response);
 	*/
 // URL-Xray 
-  // echo file_get_contents('http://180.183.251.233:4444/search.asp?id='.urlencode($encode));
+  // echo file_get_contents('http://180.183.251.233:4444/searchTest.asp?id='.urlencode($encode));
 // echo $test;
 
 
