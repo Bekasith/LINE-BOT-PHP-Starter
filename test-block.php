@@ -49,8 +49,8 @@ if (!is_null($events['events'])) {
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
 			case "0" :
 			     $res = $code; break;
-			case "2":  
-			     $res = 'อลูฯ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
+//			case "2":  
+//			     $res = 'อลูฯ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "5":  
 			     $res = 'ม่านม้วน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "6":
@@ -69,9 +69,9 @@ if (!is_null($events['events'])) {
 			     $res = 'ผ้าโซฟา'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "77" : 
 			     $res = 'ผ้า รพ.'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "78": 
+			case "78" : 
 			     $res = 'ผ้าม่าน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
-			case "79":
+			case "79" :
 			     $res = 'ผ้าม่าน'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			default:
 			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล";
