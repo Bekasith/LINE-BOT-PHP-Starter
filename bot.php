@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
 		switch ($gdtype) {
 			case "-1" :
-			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
+			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ " ( ID=[ '.$mid.' ],[ แจ้ง ชื่อ สาขา หรือ เขตการขาย ] ) " ' ; break;
 			case "0" :
 			     $res = $code; break;
 			case "5":  
