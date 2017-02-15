@@ -42,7 +42,7 @@ if (!is_null($events['events'])) {
 			case "-1" :
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
 			case "0" :
-			     $res = 'aaaa\n'.$code; break;
+			     $res = 'aaaa'.$code; break;
 			case "2":  
 			     $res = 'อลูฯ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "5":  
