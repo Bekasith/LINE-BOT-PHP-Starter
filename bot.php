@@ -51,6 +51,12 @@ if (!is_null($events['events'])) {
 			     $res = 'ม่านม้วน'.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "6":
 			     $res = 'ม่านปรับแสง'.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "15":  
+			     $res = 'เมจิกสกรีน'.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "16":  
+			     $res = 'แชงกรีล่า'.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "17":  
+			     $res = 'ไม้ไผ่'.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "40" :
 			     $res = 'วอลล์ '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "50" :
