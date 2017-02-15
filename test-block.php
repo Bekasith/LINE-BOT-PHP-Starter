@@ -43,7 +43,7 @@ if (!is_null($events['events'])) {
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
 			case "0" :
 				 
-				$splittedstring=explode("\n",$code);
+				$splittedstring=explode("@",$code);
 				foreach ($splittedstring as $key => $value) {
 				  echo "splittedstring[".$key."] = ".$value."<br>";
 				  $res = $res.$value."\n";
