@@ -42,7 +42,13 @@ if (!is_null($events['events'])) {
 			case "-1" :
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
 			case "0" :
-			     $res =  (string)$code; break;
+			/*	$lst = explode("\n", $code);				
+				foreach($lst as $lst) {
+				    $lst = trim($lst);
+				    $lst .= "<category>" . $cat . "</category>\n";
+				}
+				*/
+			     $res =  urlencode($code); break;
 			case "2":  
 			     $res = 'อลูฯ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
 			case "5":  
