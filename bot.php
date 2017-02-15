@@ -38,7 +38,15 @@ if (!is_null($events['events'])) {
 			case "-1" :
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ " ( ID=[ '.$mid.' ],[ แจ้ง ชื่อ สาขา หรือ เขตการขาย ] ) " ' ; break;
 			case "0" :
-			     $res = $code; break;
+				 
+				$splittedstring=explode("@",$code);
+				foreach ($splittedstring as $key => $value) {
+				  echo "splittedstring[".$key."] = ".$value."<br>";
+				  $res = $res.$value."\n";
+				} 
+					break;
+				//$res =  $code; break;
+					
 			case "5":  
 			     $res = 'ม่านม้วน'.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "6":
