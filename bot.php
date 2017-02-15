@@ -57,8 +57,18 @@ if (!is_null($events['events'])) {
 			     $res = 'สายรวบ '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "51" :
 			     $res = 'ชายครุย '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "52" :
+			     $res = '?? '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "53" :
+			     $res = '?? '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "54" :
 			     $res = 'ตะขอ '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "55" :
+			     $res = '?? '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "58" :
+			     $res = '?? '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+			case "59" :
+			     $res = '?? '.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "72" :
 			     $res = 'ผ้าโปร่ง'.' รหัส '.$code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "73" :
