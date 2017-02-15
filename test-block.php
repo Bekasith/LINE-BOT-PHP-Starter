@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 			//	    $lst .= "<category>" . $cat . "</category>\n";
 				}
 				
-			     $res =  $lst." - ".urlencode($code); break;
+			     $res =  $lst." \n ".urlencode($code); break;
 					
 			case "2":  
 			     $res = 'อลูฯ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
