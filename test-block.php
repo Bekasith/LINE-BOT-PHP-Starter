@@ -37,18 +37,19 @@ if (!is_null($events['events'])) {
 			list($gdtype , $code, $bal, $reserve, $info) = split("#", $a, 5);
 	
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
-			
+			$res= "";
 			switch ($gdtype) {
 			case "-1" :
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
 			case "0" :
-				$lst = explode("\n", $code);				
-				foreach($lst as $lst) {
-				    $lst = trim($lst);
-			//	    $lst .= "<category>" . $cat . "</category>\n";
-				}
-				
-			     $res =  $lst." \n ".urlencode($code); break;
+				 
+				$splittedstring=explode(" ",$code);
+				foreach ($splittedstring as $key => $value) {
+				  echo "splittedstring[".$key."] = ".$value."<br>";
+				  $res = $res.$value."\n";
+				} 
+					break;
+				//$res =  $code; break;
 					
 			case "2":  
 			     $res = 'อลูฯ'.' รหัส '.$code.' คงเหลือ'.$bal.' จอง['.$reserve.']  '.$info; break;
