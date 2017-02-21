@@ -7,26 +7,27 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => '084e9260baa38004fc2eb2b599fc5157']);
 $response = $bot->getProfile('U583bfafb13ea45d23ab1bb4c545b2d0a');
 
-*/
-            $url = 'https://api.line.me/v2/bot/profile/U583bfafb13ea45d23ab1bb4c545b2d0a';
-			 
-			$headers = array('Content-Type: application/json; charset=UTF-8', 'Authorization: Bearer ' . $access_token);
-			$ch = curl_init($url);
-			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-			$result = curl_exec($ch);
-			curl_close($ch);
-			echo $result . "\r\n";
+*/ 
 
-/*
-if ($response->isSucceeded()) {
-    $profile = $response->getJSONDecodedBody();
-    echo $profile['displayName'];
-    echo $profile['pictureUrl'];
-    echo $profile['statusMessage'];
-}
-*/
-echo "OK";
+ $mock = function ($testRunner, $httpMethod, $url, $data) {
+            /** @var \PHPUnit_Framework_TestCase $testRunner */
+            $testRunner->assertEquals('GET', $httpMethod);
+            $testRunner->assertEquals('https://api.line.me/v2/bot/profile/USER_ID', $url);
+            return [
+                'displayName' => 'BOT API',
+                'userId' => 'userId',
+                'pictureUrl' => 'https://example.com/abcdefghijklmn',
+                'statusMessage' => 'Hello, LINE!',
+            ];
+        };
+        $bot = new LINEBot(new DummyHttpClient($this, $mock), ['channelSecret' => 'CHANNEL-SECRET']);
+        $res = $bot->getProfile('USER_ID');
+        $this->assertEquals(200, $res->getHTTPStatus());
+        $this->assertTrue($res->isSucceeded());
+        $data = $res->getJSONDecodedBody();
+        $this->assertEquals('BOT API', $data['displayName']);
+        $this->assertEquals('userId', $data['userId']);
+        $this->assertEquals('https://example.com/abcdefghijklmn', $data['pictureUrl']);
+        $this->assertEquals('Hello, LINE!', $data['statusMessage']);
 
+?> 
