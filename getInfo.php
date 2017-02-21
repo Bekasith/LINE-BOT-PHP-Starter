@@ -6,12 +6,13 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => '084e9260baa38004fc2eb2b599fc5157']);
 $response = $bot->getProfile('U583bfafb13ea45d23ab1bb4c545b2d0a');
 echo "OK1";
-if ($response->isSucceeded()) {
+/*if ($response->isSucceeded()) {
     $profile = $response->getJSONDecodedBody();
     echo $profile['displayName'];
     echo $profile['pictureUrl'];
     echo $profile['statusMessage'];
 }
+*/
 
 echo "OK";
 
