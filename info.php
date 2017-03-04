@@ -9,7 +9,7 @@ $access_token  = 'Ns2HTJkXtLxaV0E52ZI409E6oG/NVwN7ZKXTaHZSs/KS4LenNVh6VpCiz+AwRp
 
 $bot = new BOT_API($channelSecret, $access_token);
 	
-$bot->sendMessageNew('Uf1a74f917aa3ed3ed98e417fcc209fee', 'Test Say Hi !! ');
+$bot->sendMessageNew('Uf1a74f917aa3ed3ed98e417fcc209fee', 'Poko ไง จะใครหล่ะ \n เราจะมาบอกว่า ลองถามเราแบบนี้ หรือยัง\n "Roma-" ลองดูสิ  !! ');
 
 if ($bot->isSuccess()) {
 	echo 'Succeeded!';
