@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 			list($gdtype , $code, $bal, $reserve, $info) = split("#", $a, 5);
 	
 //	$res = 'ม่านปรับแสง'.' รหัส'.$code.' คงเหลือ'.$bal.' จอง['.$reserve.'] เมื่อ '.$update   // every text return from myHost
-			$res= "";
+/*			$res= "";
 			switch ($gdtype) {
 			case "-1" :
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
@@ -85,12 +85,12 @@ if (!is_null($events['events'])) {
 			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล ";
 			}
 	 
-			
+*/			
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
 // 				'text' =>  $mid.'-'.$cid
-				'text' =>  $res
+				'text' =>  $a
 			];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
