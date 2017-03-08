@@ -131,5 +131,5 @@ function utf8_encode_deep(&$input) {
             utf8_encode_deep($input->$var);
         }
     }
-
+}
 ?>
