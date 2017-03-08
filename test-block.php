@@ -87,7 +87,7 @@ if (!is_null($events['events'])) {
 	 
 */			
 			//utf8_encode_deep($a);
-				$a = utf8_encode($a);
+				//$a = utf8_encode($a);
 			
 			// Build message to reply back
 			$messages = [
