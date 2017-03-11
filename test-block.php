@@ -47,6 +47,8 @@ if (!is_null($events['events'])) {
 					break;
 				//$res =  $code; break;
 					
+			case "1" :
+				 $res = $code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "2" :
 				$splittedstring=explode("~",$code);
 				foreach ($splittedstring as $key => $value) {
