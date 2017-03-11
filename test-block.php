@@ -45,18 +45,16 @@ if (!is_null($events['events'])) {
 				  $res = $res.$value."\n";
 				} 
 					break;
-				//$res =  $code; break;
 					
 			case "1" :
 				 $res = $code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "2" :
-				$splittedstring=explode("~",$code);
+				$splittedstring=explode("@",$code);
 				foreach ($splittedstring as $key => $value) {
 				  echo "splittedstring[".$key."] = ".$value."<br>";
 				  $res = $res.$value."\n";
 				} 
 					break;
-				//$res =  $code; break;
 			default:
 			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล ";
 			}
