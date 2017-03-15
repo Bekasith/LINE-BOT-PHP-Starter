@@ -54,6 +54,13 @@ if (!is_null($events['events'])) {
 				  $res = $res.$value."\n";
 				} 
 					break;
+			case "3" :
+				$splittedstring=explode("~",$code);
+				foreach ($splittedstring as $key => $value) {
+				  echo "splittedstring[".$key."] = ".$value."<br>";
+				  $res = $res.$value."\n";
+				} 
+					break;
 			default:
 			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล ";
 			}
