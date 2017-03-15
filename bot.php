@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
 			case "-1" :
 			     $res = 'กรุณา ลงทะเบียน ทาง PG@kaceebest.com ด้วย ข้อความนี้ id=['.$mid.'],[ ชื่อ ],[ ลค/พนง ]' ; break;
 			case "0" :
-				$splittedstring=explode("@",$code);
+				$splittedstring=explode("~",$code);
 				foreach ($splittedstring as $key => $value) {
 				  echo "splittedstring[".$key."] = ".$value."<br>";
 				  $res = $res.$value."\n";
@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 			case "1" :
 				 $res = $code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
 			case "2" :
-				$splittedstring=explode("@",$code);
+				$splittedstring=explode("~",$code);
 				foreach ($splittedstring as $key => $value) {
 				  echo "splittedstring[".$key."] = ".$value."<br>";
 				  $res = $res.$value."\n";
