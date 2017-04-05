@@ -49,9 +49,9 @@ if (!is_null($events['events'])) {
 				$splittedstring=explode("~",$info);
 				foreach ($splittedstring as $key => $value) {
 				  echo "splittedstring[".$key."] = ".$value."<br>";
-				  $info = $info.$value."\n";
+				  $detail = $detail.$value."\n";
 				} 
-				$res = $code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$info; break;
+				$res = $code.' คงเหลือ ['.$bal.'] จอง['.$reserve.']  '.$detail; break;
 					break;
 			
 			case "2" :
