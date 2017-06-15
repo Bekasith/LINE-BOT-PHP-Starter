@@ -69,10 +69,10 @@ if (!is_null($events['events'])) {
 				} 
 					break;
 			default:
-			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล ";
+			     $res = "กาทำงาน พบ ปัญหาบางอย่าง ";
 			}
 	 
-			$res = "ระบบไม่สามารถใช้งานได้ ชั่วคราว";
+		
 				
 			// Build message to reply back
 			$messages = [
