@@ -72,7 +72,8 @@ if (!is_null($events['events'])) {
 			     $res = "สินค้านี้ ยังไม่พร้อมให้ ข้อมูล ";
 			}
 	 
-			
+			$res = "ระบบไม่สามารถใช้งานได้ ชั่วคราว"
+				
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
@@ -98,6 +99,8 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
+			
+			
 		}
 	}
 }
