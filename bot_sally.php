@@ -61,7 +61,7 @@ if (!is_null($events['events'])) {
 				} 
 					break;
 			default:
-			     $res = "การทำงาน พบ ปัญหา บางอย่าง;
+			     $res = "การทำงาน พบ ปัญหา บางอย่าง";
 			}
 	 
 			
