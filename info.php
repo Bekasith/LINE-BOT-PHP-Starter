@@ -4,9 +4,6 @@
 
 include ('php/line-bot.php');
 
-$channelSecret = '084e9260baa38004fc2eb2b599fc5157';
-$access_token  = 'Ns2HTJkXtLxaV0E52ZI409E6oG/NVwN7ZKXTaHZSs/KS4LenNVh6VpCiz+AwRpTHqlUH9fw+iJRxWULG7LHdeIEmoNT67iR3AswlFGJJO6W7et3YixhBF5gCQDgtG/Idq08FdSHYS9OMOBQwdqOQxQdB04t89/1O/w1cDnyilFU=';
-
 $bot = new BOT_API($channelSecret, $access_token);
 
 //$msg = $msg.""."\n";
